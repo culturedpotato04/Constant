@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Our Universe. A love story written in the stars. P and CG, since June 24, 2022.">
+  <meta name="theme-color" content="#0a0a1a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Our Universe | P & CG 💜</title>
+  
+  <!-- Favicon (heart emoji) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💜</text></svg>">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== STARFIELD CANVAS ==================== -->
+  <canvas id="starfield"></canvas>
+
+  <!-- ==================== PRELOADER ==================== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-heart"></div>
+    <p class="preloader-text">Loading our universe...</p>
+  </div>
+
+  <!-- ==================== HEART BURST CONTAINER ==================== -->
+  <div class="heart-burst" id="heart-burst"></div>
+
+  <!-- ==================== BACKGROUND MUSIC ==================== -->
+  <audio id="bg-music" preload="auto" loop>
+    <source src="assets/music/Ajab Si Om Shanti Om 320 Kbps.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- ==================== FLOATING MUSIC PLAYER ==================== -->
+  <div class="music-player-float" id="music-player">
+    <span class="music-label">♪ Ajab Si, Our Song</span>
+    <button class="music-toggle" id="music-toggle" aria-label="Toggle Music">
+      <div class="music-bars">
+        <span class="music-bar"></span>
+        <span class="music-bar"></span>
+        <span class="music-bar"></span>
+        <span class="music-bar"></span>
+        <span class="music-bar"></span>
+      </div>
+    </button>
+  </div>
+
+
+  <!-- ================================================================ -->
+  <!-- SECTION 1: HERO                                                  -->
+  <!-- ================================================================ -->
+  <section class="hero section" id="hero">
+    <div class="hero-constellation">
+      <div class="hero-names">
+        <span class="hero-name name-p">P</span>
+        <div class="hero-connector">
+          <span class="heart-icon">💜</span>
+        </div>
+        <span class="hero-name name-cg">CG</span>
+      </div>
+      
+      <p class="hero-tagline">Every love story is beautiful, but ours is my favorite</p>
+      <p class="hero-date">Since June 24, 2022 • 12:55 PM</p>
+      <p class="hero-years">✦ 4 Years of Infinite Moments ✦</p>
+    </div>
+    
+    <div class="scroll-indicator" id="scroll-indicator">
+      <span class="scroll-text">Scroll to begin our journey</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================ -->
+  <!-- SECTION 2: TIMELINE                                              -->
+  <!-- ================================================================ -->
+  <section class="timeline-section section" id="timeline">
+    <div class="section-content">
+      <h2 class="section-title reveal">
+        The Chapters <span class="accent">That Made Us</span>
+      </h2>
+      <p class="section-subtitle reveal">Some moments refuse to become memories, they stay alive</p>
+      
+      <div class="timeline-container">
+        
+        <!-- MILESTONE 1: Where It All Began -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">June 24, 2022 · After 12:55 PM</span>
+            <h3 class="timeline-title">The Smile That Rewrote Everything</h3>
+            <p class="timeline-text">
+              A pale pink kurti. Tired eyes still recovering from covid. And a formal smile that had no idea what it was about to start. I remember thinking how someone could look that gentle after going through so much. That afternoon, without knowing it, something inside me quietly decided: this softness needed protecting. This person needed to keep smiling. Whatever it takes. I walked in as a stranger that day. I never quite walked out the same.
+            </p>
+            <img src="assets/photos/CG9.png" alt="CG, the beginning" class="timeline-photo" style="object-position: top center;" loading="lazy">
+          </div>
+        </div>
+        
+        <!-- MILESTONE 2: The Night Everything Changed -->
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">September 2022 · One Late Night</span>
+            <h3 class="timeline-title">When Silence Spoke Louder</h3>
+            <p class="timeline-text">
+              That night had no plan. Just us talking past midnight, peeling back layers we didn't usually show anyone. I told you things I'd kept locked away. You didn't judge, didn't fix, didn't run. You just listened. And then, without a single word of explanation, you sent a forehead kiss gif. That was your way of saying, "I've got you." No grand declaration, no dramatic confession. Just warmth, delivered at 2 AM, through a tiny animated gif that somehow carried more weight than any sentence ever could.
+            </p>
+            <video src="assets/gifs/Forehead kiss..mp4" autoplay loop muted playsinline class="timeline-gif" style="display:block; margin-left:auto; margin-right:auto;"></video>
+          </div>
+        </div>
+        
+        <!-- MILESTONE 3: Coming Home To You -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">December 14, 2024</span>
+            <h3 class="timeline-title">When Pixels Became Real</h3>
+            <p class="timeline-text">
+              Two and a half years of screens, voice notes, and goodnight texts finally collapsed into real footsteps. I brought you to my college, showed you the corridors I walk through, the bench I sit on when I'm thinking about you, the canteen where I imagine you sitting across from me. Every spot I'd described in texts suddenly had you standing in it. The distance didn't disappear that day. It just stopped mattering.
+            </p>
+            <img src="assets/photos/WhatsApp Image 2025-03-26 at 14.53.03_ecc8254e.jpg" alt="P and CG together at college" class="timeline-photo" loading="lazy">
+          </div>
+        </div>
+        
+        <!-- MILESTONE 4: Four Years -->
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">June 24, 2026</span>
+            <h3 class="timeline-title">Still Choosing You</h3>
+            <p class="timeline-text">
+              Four years. Not always smooth, not always easy, but always you. Through rough patches that tested patience, through silences that felt heavier than arguments, through late night calls that healed more than either of us admitted. You're still the first person I want to tell things to. Still the voice I want to hear at the end of a long day. Still the notification that makes me pause everything. Four years later, nothing about choosing you feels like a choice anymore. It just feels like breathing.
+            </p>
+            <img src="assets/photos/CG6 (1).jpg" alt="CG, four years" class="timeline-photo" loading="lazy">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+  <div class="section-divider"></div>
+
+
+  <!-- ================================================================ -->
+  <!-- PHOTO GALLERY STRIP                                              -->
+  <!-- ================================================================ -->
+  <section class="gallery-strip" id="gallery">
+    <p class="gallery-strip-title reveal">Frames from our universe ✨</p>
+    <div class="gallery-scroll">
+      <div class="gallery-item"><img src="assets/photos/CG.jpg" alt="CG" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/photos/CG1.jpg" alt="CG" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/photos/CG2.jpg" alt="CG" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/photos/CG3.jpg" alt="CG" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/photos/CG4.jpg" alt="CG" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/photos/CG5.jpg" alt="CG" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/photos/CG6.jpg" alt="CG" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/photos/CG7.jpg" alt="CG" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/photos/CG8.png" alt="CG" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/photos/CG10.png" alt="CG" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/photos/CG11.jpg" alt="CG" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/photos/CG12.jpg" alt="CG" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/photos/CG1 (1).jpg" alt="CG at school" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/photos/CG2 (1).jpg" alt="CG night" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/photos/CG4 (1).jpg" alt="CG rings" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/photos/CG5 (1).jpg" alt="CG selfie" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/photos/CG13.jpg" alt="CG" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/photos/IMG-20250110-WA0005.jpg" alt="CG" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/photos/WhatsApp Image 2025-03-26 at 14.53.03_a3fef918.jpg" alt="P and CG" loading="lazy"></div>
+    </div>
+  </section>
+
+
+  <div class="section-divider rose"></div>
+
+
+  <!-- ================================================================ -->
+  <!-- SECTION 3: THINGS I LOVE ABOUT YOU                               -->
+  <!-- ================================================================ -->
+  <section class="love-section section" id="love">
+    <div class="section-content">
+      <h2 class="section-title reveal">
+        The <span class="rose-accent">Evidence</span> Against My Heart
+      </h2>
+      <p class="section-subtitle reveal">Every little reason you've made it impossible to look away</p>
+      
+      <div class="love-grid">
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">01</span>
+          <span class="love-card-icon">🤨</span>
+          <p class="love-card-text">The way your eyebrows secretly start arguing before your words do whenever you're annoyed</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">02</span>
+          <span class="love-card-icon">😤</span>
+          <p class="love-card-text">That tiny pout that arrives uninvited whenever things don't go your way, as if the world owes its princess an explanation</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">03</span>
+          <span class="love-card-icon">🌀</span>
+          <p class="love-card-text">The way your eyes wander somewhere far away when you're trying to remember something, only to return a few seconds later with a completely different topic</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">04</span>
+          <span class="love-card-icon">🤍</span>
+          <p class="love-card-text">Your little habit of caring quietly, never announcing it, never asking for credit, just leaving pieces of your love behind in the smallest ways</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">05</span>
+          <span class="love-card-icon">🌸</span>
+          <p class="love-card-text">The softness hidden beneath your stubbornness</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">06</span>
+          <span class="love-card-icon">⚡</span>
+          <p class="love-card-text">The strength hidden beneath your softness</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">07</span>
+          <span class="love-card-icon">👂</span>
+          <p class="love-card-text">That familiar head tilt whenever you're listening carefully, making me feel like every word matters</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">08</span>
+          <span class="love-card-icon">🌅</span>
+          <p class="love-card-text">The way your smile never arrives all at once; it slowly blooms across your face until it takes over everything around it</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">09</span>
+          <span class="love-card-icon">🌙</span>
+          <p class="love-card-text">Your sleepy voice carrying more comfort than a hundred perfectly written paragraphs ever could</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">10</span>
+          <span class="love-card-icon">😠</span>
+          <p class="love-card-text">The way you become unintentionally adorable when you're trying very hard to be serious</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">11</span>
+          <span class="love-card-icon">👀</span>
+          <p class="love-card-text">Those expressive eyes that reveal emotions long before your words decide to cooperate</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">12</span>
+          <span class="love-card-icon">🌪️</span>
+          <p class="love-card-text">The gentle chaos you bring into ordinary days</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">13</span>
+          <span class="love-card-icon">🕊️</span>
+          <p class="love-card-text">The calm you bring into difficult ones</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">14</span>
+          <span class="love-card-icon">😂</span>
+          <p class="love-card-text">The way your laughter refuses to stay in one place, spreading into every corner and somehow making everything lighter</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">15</span>
+          <span class="love-card-icon">🫂</span>
+          <p class="love-card-text">The quiet reassurance of knowing you're there, even during the moments when neither of us knows what to say</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">16</span>
+          <span class="love-card-icon">🌿</span>
+          <p class="love-card-text">The way you remain yourself through every season, every change, every storm</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">17</span>
+          <span class="love-card-icon">🔁</span>
+          <p class="love-card-text">Your ability to turn ordinary conversations into memories I replay months later</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">18</span>
+          <span class="love-card-icon">📞</span>
+          <p class="love-card-text">The warmth you leave behind after every call</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">19</span>
+          <span class="love-card-icon">☕</span>
+          <p class="love-card-text">The comfort hidden inside your presence</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">20</span>
+          <span class="love-card-icon">🏡</span>
+          <p class="love-card-text">The familiarity that feels less like a person and more like a place I belong</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">21</span>
+          <span class="love-card-icon">✨</span>
+          <p class="love-card-text">Four years of stolen smiles</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">22</span>
+          <span class="love-card-icon">💬</span>
+          <p class="love-card-text">Four years of endless bak bak</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">23</span>
+          <span class="love-card-icon">💎</span>
+          <p class="love-card-text">Four years of memories too small for the world to notice but too precious for my heart to forget</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">24</span>
+          <span class="love-card-icon">🧩</span>
+          <p class="love-card-text">Every giggle, every complaint, every random thought, every unexpected laugh. Little pieces of you woven so deeply into my life that I can no longer imagine my story without them</p>
+        </div>
+        
+        <div class="love-card reveal">
+          <span class="love-card-number">25</span>
+          <span class="love-card-icon">🔔</span>
+          <p class="love-card-text">And somehow, after all this time, you still remain my favourite notification, my favourite distraction, my favourite comfort, and my favourite person to come home to</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+  <div class="section-divider"></div>
+
+
+  <!-- ================================================================ -->
+  <!-- SECTION 4: LOVE LETTER                                           -->
+  <!-- ================================================================ -->
+  <section class="letter-section section" id="letter">
+    <div class="section-content">
+      <h2 class="section-title reveal">
+        A Letter from <span class="accent">My Heart</span>
+      </h2>
+      <p class="section-subtitle reveal">Words I carry for you, always</p>
+      
+      <div class="letter-container">
+        <div class="letter-card reveal-scale">
+          <h3 class="letter-greeting">My CG,</h3>
+          
+          <div class="letter-body" id="letter-body" data-text="Four years ago, I could never have guessed that one person would quietly become such an important part of my life. What started as a simple beginning on 24th June 2022 slowly turned into something that feels so much bigger than I ever knew how to hold. And still, here I am, loving you in a way that keeps growing, even when life is messy, even when distance exists, even when words fall short.
+
+Your nicknames like Nalayak, your chota bachcha, kuttha etc etc. You make even the simplest things feel special. You have this way of making my heart feel understood without needing too many explanations. That kind of connection is rare, and I know it.
+
+You have been my comfort, my favourite person to talk to, my safe place in ways I cannot always explain properly. You have healed parts of me just by being yourself. And if I am being honest, there are so many times I have carried your words, your presence, your memory with me, especially when I needed it most. You have meant more to me than I've ever been able to say out loud.
+
+I still think of all the memories we've made, all the conversations that became precious, all the moments that made me feel closer to you. I think of how natural it feels when it is just us, how easy it is to be myself with you, how impossible it would be to replace what we have. Even when we are apart, a part of me still feels connected to you in a way that does not fade.
+
+And then there is Mishita too, who makes this bond feel even more beautiful and real to me. In so many ways, loving you means loving the world around you, your happiness, your strength, your heart, and everything that matters to you. I never take that lightly. I carry all of it with care.
+
+I do not know what every tomorrow will look like, but I know this much for certain: the love I feel for you is real, deep, and lasting. It lives in my memories, in my thoughts, in the quiet moments, in the loud ones, in every part of me that learned how to love more honestly because of you.
+
+So this is me, telling you plainly and from the heart, that I love you. I love who you are, what you mean to me, and the beautiful place you hold in my life. No matter how time moves, no matter what changes around us, no matter if we get back to how we were or not, you will always remain as the most precious parts of my life book."></div>
+          
+          <div class="letter-signature" style="opacity: 0; transform: translateY(20px);">
+            <span class="sig-line">Yours, always in feeling,</span>
+            <span class="sig-name">Water Dispenser Guy 💧</span>
+          </div>
+          
+          <div class="letter-hindi" style="opacity: 0; transform: translateY(20px);">
+            "CG, tu thi, tu hai… aur tu hi rahegi... hamesha k liye" 💜
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="section-divider rose"></div>
+
+
+  <!-- ================================================================ -->
+  <!-- SECTION 5: OUR SONG                                              -->
+  <!-- ================================================================ -->
+  <section class="song-section section" id="song">
+    <div class="section-content">
+      <h2 class="section-title reveal">
+        <span class="accent">Our</span> Song
+      </h2>
+      <p class="section-subtitle reveal">The melody that opened every door between us</p>
+      
+      <div class="song-card reveal-scale">
+        <!-- Visualizer rings -->
+        <div class="song-visualizer">
+          <div class="song-ring"></div>
+          <div class="song-ring"></div>
+          <div class="song-ring"></div>
+        </div>
+        
+        <!-- Vinyl record -->
+        <div class="song-vinyl">
+          <div class="song-vinyl-label">
+            <span>P & CG<br>2022</span>
+          </div>
+        </div>
+        
+        <h3 class="song-title">Ajab Si</h3>
+        <p class="song-subtitle">Om Shanti Om · The song I dedicated to you, the one that turned small talk into something irreversible</p>
+        
+        <button class="song-play-btn" id="song-play-btn" aria-label="Play Ajab Si">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="5,3 19,12 5,21" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="section-divider"></div>
+
+
+  <!-- ================================================================ -->
+  <!-- SECTION 6: OUR LITTLE WORLD                                      -->
+  <!-- ================================================================ -->
+  <section class="fun-section section" id="fun">
+    <div class="section-content">
+      <h2 class="section-title reveal">
+        Our Little <span class="rose-accent">World</span>
+      </h2>
+      <p class="section-subtitle reveal">The vocabulary nobody else has access to</p>
+      
+      <div class="fun-grid">
+        
+        <div class="fun-card reveal">
+          <span class="fun-card-emoji">🧇</span>
+          <h3 class="fun-card-title">The Set Dosa Chronicles</h3>
+          <p class="fun-card-desc">Because you once thought set dosa meant masala dosa, but with aloo stacked between the dosas. I still cannot hear the name without imagining that tiny food theory and laughing a little.</p>
+        </div>
+        
+        <div class="fun-card reveal">
+          <span class="fun-card-emoji">♿🐼</span>
+          <h3 class="fun-card-title">Wheelchair Granny & Your Pet Panda</h3>
+          <p class="fun-card-desc">The most unhinged duo in any fictional universe. You have wheels, I have emotional support bamboo. Our origin story makes zero sense and that's exactly why it's perfect. If you know, you know. 😏</p>
+        </div>
+        
+        <div class="fun-card reveal">
+          <span class="fun-card-emoji">💧</span>
+          <h3 class="fun-card-title">Water Dispenser Guy</h3>
+          <p class="fun-card-desc">Because of that dream where a guy near the water dispenser hugged you and lifted you up with so much love and joy. Somehow that became me, and honestly, I will keep that title forever.</p>
+        </div>
+        
+      </div>
+      
+      <!-- Nicknames -->
+      <div class="nicknames-section reveal">
+        <div class="nicknames-group">
+          <p class="nicknames-label">What I call you 💜</p>
+          <div class="nicknames-tags">
+            <span class="nickname-tag rose-tag">CG</span>
+            <span class="nickname-tag rose-tag">Pagli</span>
+            <span class="nickname-tag rose-tag">Cutie</span>
+            <span class="nickname-tag rose-tag">Chudail</span>
+            <span class="nickname-tag rose-tag">Baby</span>
+            <span class="nickname-tag rose-tag">Queen</span>
+            <span class="nickname-tag rose-tag">Bestie</span>
+            <span class="nickname-tag rose-tag">Pookie Baby</span>
+          </div>
+        </div>
+        
+        <div class="nicknames-group">
+          <p class="nicknames-label">What you call me 🐼</p>
+          <div class="nicknames-tags">
+            <span class="nickname-tag gold-tag">P</span>
+            <span class="nickname-tag gold-tag">Nalayak</span>
+            <span class="nickname-tag gold-tag">Kuttha</span>
+            <span class="nickname-tag gold-tag">Chota Bachcha</span>
+            <span class="nickname-tag gold-tag">Kottavaranga</span>
+            <span class="nickname-tag gold-tag">Panda</span>
+            <span class="nickname-tag gold-tag">Fatso</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hug GIF -->
+      <div style="text-align: center; margin-top: 3rem;" class="reveal">
+        <img src="assets/gifs/hug-gif-9.gif" alt="Hug" style="width: 250px; max-width: 80%; border-radius: 16px; border: 1px solid rgba(255,255,255,0.08); margin: 0 auto;" loading="lazy">
+        <p style="font-family: var(--font-cursive); color: var(--text-muted); margin-top: 1rem; font-size: 1.1rem;">This is us, always 🤗</p>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="section-divider rose"></div>
+
+
+  <!-- ================================================================ -->
+  <!-- SECTION 7: FINALE                                                -->
+  <!-- ================================================================ -->
+  <section class="finale-section section" id="finale">
+    <div class="section-content" style="text-align: center;">
+      
+      <span class="finale-badge reveal">Forever starts here ✨</span>
+      
+      <h2 class="section-title reveal" style="margin-bottom: 2.5rem;">
+        Every Second <span class="accent">With You</span>
+      </h2>
+      
+      <div class="counter-container reveal">
+        <div class="counter-item">
+          <span class="counter-value" id="counter-years">0</span>
+          <span class="counter-label">Years</span>
+        </div>
+        <span class="counter-separator">:</span>
+        <div class="counter-item">
+          <span class="counter-value" id="counter-months">0</span>
+          <span class="counter-label">Months</span>
+        </div>
+        <span class="counter-separator">:</span>
+        <div class="counter-item">
+          <span class="counter-value" id="counter-days">0</span>
+          <span class="counter-label">Days</span>
+        </div>
+        <span class="counter-separator">:</span>
+        <div class="counter-item">
+          <span class="counter-value" id="counter-hours">0</span>
+          <span class="counter-label">Hours</span>
+        </div>
+        <span class="counter-separator">:</span>
+        <div class="counter-item">
+          <span class="counter-value" id="counter-minutes">00</span>
+          <span class="counter-label">Minutes</span>
+        </div>
+        <span class="counter-separator">:</span>
+        <div class="counter-item">
+          <span class="counter-value" id="counter-seconds">00</span>
+          <span class="counter-label">Seconds</span>
+        </div>
+      </div>
+      
+      <div class="finale-message reveal">
+        <p class="finale-quote">
+          If I had to choose between breathing and loving you, I'd use my last breath to tell you...
+        </p>
+        <div class="finale-hindi">
+          "CG, tu thi, tu hai… aur tu hi rahegi... hamesha k liye" 💜
+        </div>
+      </div>
+      
+      <p class="finale-from reveal">
+        Your P, Your Water Dispenser Guy, Your Panda 🐼
+      </p>
+      
+      <!-- Your photo at finale -->
+      <div class="reveal" style="margin-top: 3rem;">
+        <img src="assets/photos/CG10.png" alt="You in the Kerala saree and blue blouse" style="width: 280px; max-width: 80%; border-radius: 50%; margin: 0 auto; border: 3px solid rgba(212,165,116,0.3); box-shadow: 0 0 60px rgba(212,165,116,0.15); object-fit: cover; object-position: 50% 14%; aspect-ratio: 1;" loading="lazy">
+      </div>
+      
+    </div>
+  </section>
+
+
+  <div class="section-divider"></div>
+
+
+  <!-- ================================================================ -->
+  <!-- SECTION 8: RESTART CTA                                           -->
+  <!-- ================================================================ -->
+  <section class="restart-section section" id="restart">
+    <div class="section-content" style="text-align: center;">
+      
+      <h2 class="section-title reveal">
+        Restart? <span class="rose-accent">(try karo na CG)</span>
+      </h2>
+      <p class="section-subtitle reveal">Pick one. You know you want to. 💜</p>
+      
+      <div class="cta-container reveal">
+        
+        <a href="tel:9606994607" class="cta-btn cta-call" id="cta-call">
+          <span class="cta-icon">📞</span>
+          <span class="cta-label">Call Me</span>
+          <span class="cta-hint">your voice is my favourite sound</span>
+        </a>
+        
+        <a href="https://wa.me/919449215753" target="_blank" rel="noopener noreferrer" class="cta-btn cta-whatsapp" id="cta-whatsapp">
+          <span class="cta-icon">💬</span>
+          <span class="cta-label">WhatsApp Me</span>
+          <span class="cta-hint">bak bak pending hai</span>
+        </a>
+        
+        <a href="https://ig.me/m/pcgi.4" target="_blank" rel="noopener noreferrer" class="cta-btn cta-instagram" id="cta-instagram">
+          <span class="cta-icon">📸</span>
+          <span class="cta-label">DM Me</span>
+          <span class="cta-hint">slide into my DMs, CG</span>
+        </a>
+        
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <p class="footer-text">
+      Made with <span class="footer-heart">💜</span> by your P, for you · Our Universe, June 2026
+    </p>
+  </footer>
+
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script src="js/stars.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
